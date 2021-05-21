@@ -1,6 +1,6 @@
-package br.com.hotelcompensa.dto;
+package br.com.hotelcompensa.model;
 
-public class EnderecoDTO {
+public class Endereco{
 	
 	private Long id;
 	private String cep;
@@ -11,7 +11,7 @@ public class EnderecoDTO {
 	private String cidade;
 	private String estado;
 	
-	public EnderecoDTO(Long id, String cep, String logradouro, String numero, String complemento, String bairro,
+	public Endereco(Long id, String cep, String logradouro, String numero, String complemento, String bairro,
 			String cidade, String estado) {
 		super();
 		this.id = id;

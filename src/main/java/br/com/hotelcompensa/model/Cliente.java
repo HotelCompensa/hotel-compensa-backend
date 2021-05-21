@@ -1,9 +1,9 @@
-package br.com.hotelcompensa.dto;
+package br.com.hotelcompensa.model;
 
  
 import java.time.LocalDateTime;
 
-public class ClienteDTO {
+public class Cliente {
 	
 	private Long id;
 	private String nome;
@@ -12,8 +12,8 @@ public class ClienteDTO {
 	private String email;
 	private String cpf;
 	private char sexo;
-	private EnderecoDTO endereco;
-	private TelefoneDTO telefone;
+	private Endereco endereco;
+	private Telefone telefone;
 	
 	public Long getId() {
 		return id;
@@ -57,16 +57,16 @@ public class ClienteDTO {
 	public void setSexo(char sexo) {
 		this.sexo = sexo;
 	}
-	public TelefoneDTO getTelefone() {
+	public Telefone getTelefone() {
 		return telefone;
 	}
-	public void setTelefone(TelefoneDTO telefone) {
+	public void setTelefone(Telefone telefone) {
 		this.telefone = telefone;
 	}
-	public EnderecoDTO getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
-	public void setEndereco(EnderecoDTO endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 	

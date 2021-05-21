@@ -7,7 +7,9 @@ import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-import br.com.hotelcompensa.dto.ClienteDTO;
+import org.jboss.resteasy.annotations.jaxrs.PathParam;
+
+import br.com.hotelcompensa.model.Cliente;
 import br.com.hotelcompensa.service.ClienteService;
 
 @Path("/api/v1/clientes")
@@ -17,10 +19,16 @@ public class ClienteController {
 	@Inject
 	ClienteService service;
 
+	@GET
+	@Path ("/{id}")
+	public Cliente listarClientePorId(@PathParam Long id) {
+		return service.retornaClientePorId(id);
+
+	}
 	
 
 	@GET
-	public List<ClienteDTO> listarClientes() {
+	public List<Cliente> listarClientes() {
 		return service.findAll();
 
 	}

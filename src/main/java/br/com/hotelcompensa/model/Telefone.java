@@ -1,6 +1,6 @@
-package br.com.hotelcompensa.dto;
+package br.com.hotelcompensa.model;
 
-public class TelefoneDTO {
+public class Telefone {
 	
 	private Long id;
 	private String ddd;
@@ -9,7 +9,7 @@ public class TelefoneDTO {
 	private String tipoTelefone;
 	
 	
-	public TelefoneDTO(Long id, String ddd, String telefone, String flagTelefonePrincipal, String tipoTelefone) {
+	public Telefone(Long id, String ddd, String telefone, String flagTelefonePrincipal, String tipoTelefone) {
 		super();
 		this.id = id;
 		this.ddd = ddd;
