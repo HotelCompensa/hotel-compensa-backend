@@ -1,14 +1,14 @@
 package br.com.hotelcompensa.model;
 
  
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Cliente {
 	
 	private Long id;
 	private String nome;
 	private String sobrenome;
-	private LocalDateTime dataNascimento;
+	private LocalDate dataNascimento;
 	private String email;
 	private String cpf;
 	private char sexo;
@@ -33,10 +33,10 @@ public class Cliente {
 	public void setSobrenome(String sobrenome) {
 		this.sobrenome = sobrenome;
 	}
-	public LocalDateTime getDataNascimento() {
+	public LocalDate getDataNascimento() {
 		return dataNascimento;
 	}
-	public void setDataNascimento(LocalDateTime dataNascimento) {
+	public void setDataNascimento(LocalDate dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	public String getEmail() {

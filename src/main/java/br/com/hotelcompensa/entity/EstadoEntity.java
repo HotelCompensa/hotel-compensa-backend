@@ -14,9 +14,6 @@ public class EstadoEntity extends PanacheEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@Column(name = "ID")
-	public Long id;
-
 	@Column(name = "DESCRICAO")
 	public String descricao;
 
