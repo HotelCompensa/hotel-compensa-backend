@@ -24,6 +24,9 @@ public class Endereco{
 		this.estado = estado;
 	}
 	
+	public Endereco() {
+	}
+
 	public Long getId() {
 		return id;
 	}
